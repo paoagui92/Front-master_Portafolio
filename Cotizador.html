@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creative Company</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/custom.css"/>		
+	</head>
+
+	<body onload="calcular()">
+		
+		<!--  Navigation Bar -->
+		
+		<nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
+			<div class="container">
+				
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand brandStyle" href="index.html">
+						<img class="img-responsive" src="/sima/img/logoDW.png" alt="">
+					</a>
+				</div>
+				
+				<div class="collapse navbar-collapse noPadding"	id="myNavbar">
+					<div class="navbar-right menustyle">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html"><p>Inicio</p></a></li>
+							<li><a href="Servicios.html"><p>Servicios</p></a></li>
+							<li><a href="Portafolio.html"><p>Portafolio</p></a></li>
+							<li><a href="Cotizador.html"><p>Cotizador</p></a></li>
+							<li><a href="Contacto.html"><p>Contacto</p></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</nav>
+		<!-- Main Page -->
+		
+		<div class="container-fluid noPadding">
+			
+			<div class="container-fluid headpictureCotizador"></div>
+			
+			<div class="container text-center">
+				
+				<h1>Cotizador</h1>
+
+				<p class="textStyle">
+					<form action="" id="calcularPrecio">
+						<fieldset><legend>Pagina web</legend>
+						  <!-- checked = true -->
+						  <p><input value="300" type="radio" name="opWeb" checked = true>Diseño Básico 3 paginas Index, Contacto, Formularios</p>
+						  <p><input value="400" type="radio" name="opWeb">Diseño Medio 4 paginas Index, Contacto, Formularios, </p>
+						  <p><input value="500" type="radio" name="opWeb">Diseño Medio 5 paginas Index, Contacto, Formularios</p>
+						</fieldset>
+						<fieldset><legend>Diseño de Imagenes o logos</legend>
+						  <p><input value="0" type="radio" name="opDWeb" >Poseo todas las imagenes y logos(no requiero ajustes)</p>
+						  <p><input value="200" type="radio" name="opDWeb" checked = true >Diseño de hasta 10 imagenes y un logo sencillo</p>
+						  <p><input value="400" type="radio" name="opDWeb">Diseño de hasta 20 imagenes y un logo con mejoras profesionales</p>
+						  <p><input value="800" type="radio" name="opDWeb">Crear imágen Corporativa Incluye logos e imagen en Vector</p>
+						</fieldset>
+						<fieldset><legend>Community Manager</legend>
+						  <p><input value="0" type="radio" name="opCM">No deseo el servicio</p>
+						  <p><input value="200" type="radio" name="opCM" checked = true>Dos publicaciones semanal en 3 cuentas por dos meses</p>
+						  <p><input value="600" type="radio" name="opCM">Tres publicaciones semanal en 3 cuentas por dos meses</p>
+						</fieldset>
+					  </form>
+	  
+					  <form action="" id="Descuento">
+						<fieldset><legend>Mantenimiento</legend>
+						  <p><input value="1" type="radio" name="opD" checked = true >No deseo Mantenimiento</p>
+						  <p><input value="2" type="radio" name="opD">Mantenimiento por 6 meses (Solo Mantenimiento de Web y Community Manager) <span class="Descuento">Ahorras un mes</span></p>
+						  
+						  <p><input value="3" type="radio" name="opD"> Mantenimiento por 12 meses (Solo Mantenimiento de Web y Community Manager) <span class="Descuento"> Ahorras dos meses</span></p>
+						  
+						</fieldset>
+					  </form>
+					  <div>
+						<p class="valor">De acuerdo a lo selecionado su precio final sera de <span id="precioFinal"></span><span>$</span></p>
+						
+					  </div>
+				</p>
+				
+				<h1>Latest Projects</h1>
+
+			</div>
+			
+			<div class="container textstyle">
+				<div class="row text-center latestProjects">
+					
+					<div class="col-md-4 col-sm-6">
+						<a href="http://dribbble.com/shots/1210363-Weather-App-Washing-Machine-iOS7" >
+							<img class="imgsize" src="assets/images/1.jpg" alt="weather app">
+						</a>
+						<p>Weather app design <a href="http://dribbble.com/shots/1210363-Weather-App-Washing-Machine-iOS7">learn more →</a></p>
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+						<a href="http://dribbble.com/shots/202313-British-Tea-Cup" >
+							<img class="imgsize" src="assets/images/2.jpg" alt="british tea cup">
+						</a>
+						<p>3D modeling and rendering <a href="http://dribbble.com/shots/202313-British-Tea-Cup">learn more →</a></p>
+					</div>
+
+					<div class="col-md-4 col-sm-12">
+						<a href="http://dribbble.com/shots/606745-In-app-Visual-Data" >
+							<img class="imgsize" src="assets/images/3.jpg" alt="app visualization data">
+						</a>
+						<p>Mobile web application <a href="http://dribbble.com/shots/606745-In-app-Visual-Data">learn more →</a></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			
+			<footer>
+				<div class="container footer">
+					<div class="row row-cols-3">
+					  <div class="col noPadding">
+						  <div class="logoDW responsiveAlign">
+							  <a href="#" class="noPadding">
+								<img src="/sima/img/logoDW.png" alt="">
+							  </a>						
+						</div>
+					  </div>
+					  <div class="col noPadding">
+						  <div class="logoText responsiveAlign">
+							  <a href="" class="noPadding">
+								<p id="footerLogoText">DW-Design © 2020</p>
+							  </a>
+						
+						</div>  
+					</div>
+					  <div class="col noPadding">
+						<div class="socialButtons responsiveAlign">
+							<a href="#" class="noPadding">
+								<img src="assets/images/twitter.svg" alt="image1">
+							</a>
+							<a href="#" class="noPadding">
+								<img src="assets/images/facebook.svg" alt="image1">
+							</a>
+							<a href="#" class="noPadding">
+								<img src="assets/images/behance.svg" alt="image1">
+							</a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</footer>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/myscript.js"></script>
+		<script src="assets/js/calculadora.js"></script>
+	</body>
+</html>
