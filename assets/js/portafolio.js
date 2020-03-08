@@ -24,9 +24,9 @@ function CargarEventListeners() {
 
 //----------Funciones----------------
 //----------Over Function------------
-function overFunction(item) {  
+function overFunction(item) {
     const l = item.target;
-    l.style.opacity="0.5";    
+    l.style.opacity="0.5";
     console.log(l);
 }
 //----------Over Function------------
