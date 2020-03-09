@@ -8,7 +8,8 @@ var $grid = $('.grid').masonry({
 
 //-------------Variables-------------
 const elem = document.getElementsByClassName("grid-item");
-console.log(elem);
+const btnVer = document.getElementsByClassName("btn-primary");
+console.log(btnVer);
 
 //--------Event listener-------------
 CargarEventListeners();
@@ -22,16 +23,27 @@ function CargarEventListeners() {
   return item;
 }
 
+
 //----------Funciones----------------
 //----------Over Function------------
 function overFunction(item) {
     const l = item.target;
-    l.style.opacity="0.5";
     console.log(l);
+    l.style.opacity="0.3";
+    const b = l.parentElement.getElementsByTagName("a");
+    b[0].setAttribute("style","z-index:1;");
+    const pr = l.parentElement.getElementsByTagName("p");
+    pr[0].setAttribute("style","z-index:1;");
+    
 }
-//----------Over Function------------
-function outFunction(item) {  
+
+//----------Out Function------------
+function outFunction(item) {
   const l = item.target;
-  l.style.opacity="1";
-  console.log(l);
+  l.style.opacity="1";  
+  const b = l.parentElement.getElementsByTagName("a");
+  b[0].setAttribute("style","z-index:-1;");
+  const pr = l.parentElement.getElementsByTagName("p");
+  pr[0].setAttribute("style","z-index:-1;");
 }
+
